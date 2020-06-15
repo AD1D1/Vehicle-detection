@@ -1,8 +1,8 @@
 import cv2
 
-camera = cv2.VideoCapture(r"C:\Users\aditya dixit\Desktop\Autonomous Vehicle detection\video.avi")
-camera.open(r"C:\Users\aditya dixit\Desktop\Autonomous Vehicle detection\video.avi")
-car_cascade = cv2.CascadeClassifier(r"C:\Users\aditya dixit\Desktop\Autonomous Vehicle detection\cars.xml")
+camera = cv2.VideoCapture(r"video.avi")
+camera.open(r"video.avi")
+car_cascade = cv2.CascadeClassifier(r"cars.xml")
 while True:
     (grabbed, frame) = camera.read()
     grayvideo = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
